@@ -1,8 +1,10 @@
 
 #Bash Aliases (command shortcuts)
 
-alias idea='intellij-idea-community'
-alias charm='pycharm-community'
+alias idea='bgr intellij-idea-community'
+alias charm='bgr pycharm-community'
+alias brave='bgr brave-browser'
+alias code='bgr code'
 
 alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir`; cd "$LASTDIR"'
 
