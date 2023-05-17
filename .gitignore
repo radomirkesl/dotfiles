@@ -4,4 +4,4 @@ nvim/.netrwhist
 nvim/lazy-lock.json
 nvim/package-lock.json
 */__pycache__
-*/__init.py__
+*/__init__.py
