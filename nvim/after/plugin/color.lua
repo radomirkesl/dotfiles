@@ -2,7 +2,7 @@ local selected = 'rose-pine'
 
 require('lualine').setup{
     options = {
-        icons_enabled = false,
+        icons_enabled = true,
         theme = selected,
         component_separators = '|',
         section_separators = '',

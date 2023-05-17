@@ -40,7 +40,9 @@ require('lazy').setup({
 
     'github/copilot.vim',
     'theprimeagen/harpoon',
-    'mbbill/undotree',
+    { -- UndoTree
+        'mbbill/undotree',
+    },
 
     -- Visuals
     {
@@ -50,6 +52,10 @@ require('lazy').setup({
         priority = 1000,
     },
     'edeneast/nightfox.nvim',
+    { -- Devicons
+        'nvim-tree/nvim-web-devicons',
+        lazy = true,
+    },
     -- Status Line
     'nvim-lualine/lualine.nvim',
 
@@ -101,6 +107,7 @@ require('lazy').setup({
             'L3MON4D3/LuaSnip',
             'saadparwaiz1/cmp_luasnip'
         },
+        event = 'InsertEnter',
     },
 
     -- Useful plugin to show you pending keybinds.
