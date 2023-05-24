@@ -3,5 +3,8 @@ nvim/node_modules
 nvim/.netrwhist
 nvim/lazy-lock.json
 nvim/package-lock.json
-*/__pycache__
-*/__init__.py
+__pycache__
+__init__.py
+kitty/current-theme.conf
+kitty/kitty.conf.bak
+

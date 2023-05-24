@@ -1,9 +1,11 @@
-ln -s ~/.dotfiles/ranger ~/.config/
-ln -s ~/.dotfiles/nvim ~/.config/
-ln -s ~/.dotfiles/kitty ~/.config/
+ln -sf ~/.dotfiles/ranger ~/.config/
+ln -sf ~/.dotfiles/nvim ~/.config/
+ln -sf ~/.dotfiles/kitty ~/.config/
+ln -sf ~/.dotfiles/i3 ~/.config/
 
-ln -s ~/.dotfiles/.bashrc ~/.bashrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.bash_aliases ~/.bash_aliases
-ln -s ~/.dotfiles/.bash_logout ~/.bash_logout
+ln -sf ~/.dotfiles/.bashrc ~/.bashrc
+ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
+ln -sf ~/.dotfiles/.bash_logout ~/.bash_logout
+ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
 
