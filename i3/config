@@ -15,7 +15,7 @@ set $mod Mod1
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 # font pango:monospace 8
-font 3270 14
+font Mononoki 11.5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -48,7 +48,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+# tiling_drag modifier titlebar
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
@@ -190,4 +190,27 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        # colors {
+
+        #         background #000000
+        #         statusline #ffffff
+
+        #         focused_workspace  #ffffff #285577
+        #         active_workspace   #ffffff #333333
+        #         inactive_workspace #888888 #222222
+        #         urgent_workspace   #ffffff #900000
+        # }
+  colors {
+    separator #928374
+    background #282828
+    statusline #ebdbb2
+    focused_workspace #689d6a #689d6a #282828 #ffffff
+    active_workspace #1d2021 #1d2021 #928374 #ffffff
+    inactive_workspace #32302f #32302f #928374 #aea79f
+    urgent_workspace #cc241d #cc241d #ebdbb2 #ffffff
+  }
 }
+client.focused #689d6a #689d6a #282828 #282828
+client.focused_inactive #1d2021 #1d2021 #928374 #282828
+client.unfocused #32302f #32302f #928374 #282828
+client.urgent #cc241d #cc241d #ebdbb2 #282828

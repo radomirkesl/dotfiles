@@ -89,3 +89,4 @@ export EDITOR='/usr/local/bin/nvim'
 export PATH="$HOME/.cargo/bin:$PATH"
 
 
+. "$HOME/.cargo/env"

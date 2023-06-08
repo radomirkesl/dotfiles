@@ -4,5 +4,8 @@ mkdir ~/.dotfiles/ranger/plugins
 ln -sf ~/appdata/ranger_devicons ~/.dotfiles/ranger/plugins/ranger_devicons
 
 # kitty theme
-kitty +kitten themes --reload-in=all Rosé Pine Moon
+kitty +kitten themes --reload-in=all Rosé Pine
+
+# i3 theme
+i3-style gruvbox -o ~/.dotfiles/i3/config --reload
 

@@ -8,4 +8,5 @@ ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
 ln -sf ~/.dotfiles/.bash_logout ~/.bash_logout
 ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
+ln -sf ~/.dotfiles/.Xresources ~/.Xresources
 
