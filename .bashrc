@@ -82,6 +82,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Start ssh-agent
+eval $(keychain -q --noask --eval ~/.ssh/github)
+
 # Set default editor
 export EDITOR='/usr/local/bin/nvim'
 

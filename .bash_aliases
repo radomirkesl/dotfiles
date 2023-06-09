@@ -12,8 +12,6 @@ alias vim='nvim'
 
 alias ls='lsd'
 
-alias startssh='eval "ssh-agent -s"'
-
 #Shortcut functions
 
 shopt -s expand_aliases
