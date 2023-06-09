@@ -201,16 +201,16 @@ bar {
         #         urgent_workspace   #ffffff #900000
         # }
   colors {
-    separator #928374
-    background #282828
-    statusline #ebdbb2
-    focused_workspace #689d6a #689d6a #282828 #ffffff
-    active_workspace #1d2021 #1d2021 #928374 #ffffff
-    inactive_workspace #32302f #32302f #928374 #aea79f
-    urgent_workspace #cc241d #cc241d #ebdbb2 #ffffff
+    separator #AAAAAA
+    background #222133
+    statusline #FFFFFF
+    focused_workspace #664477 #664477 #cccccc #282828
+    active_workspace #DCCD69 #DCCD69 #181715 #928374
+    inactive_workspace #222133 #222133 #AAAAAA #928374
+    urgent_workspace #CE4045 #CE4045 #FFFFFF #ebdbb2
   }
 }
-client.focused #689d6a #689d6a #282828 #282828
-client.focused_inactive #1d2021 #1d2021 #928374 #282828
-client.unfocused #32302f #32302f #928374 #282828
-client.urgent #cc241d #cc241d #ebdbb2 #282828
+client.focused #664477 #664477 #cccccc #e7d8b1
+client.focused_inactive #e7d8b1 #e7d8b1 #181715 #A074C4
+client.unfocused #222133 #222133 #AAAAAA #A074C4
+client.urgent #CE4045 #CE4045 #e7d8b1 #DCCD69

@@ -36,7 +36,7 @@ case "$TERM" in
 esac
 
 # prompt
-PS1='\u@\h: \w\$ '
+PS1='\u@\h: \w \$ '
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
