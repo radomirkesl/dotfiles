@@ -12,6 +12,10 @@ alias vim='nvim'
 
 alias ls='lsd'
 
+alias net='nmtui'
+alias sound='pulsemixer'
+alias bt='bluetuith'
+
 #Shortcut functions
 
 shopt -s expand_aliases

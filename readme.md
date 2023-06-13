@@ -1,32 +1,51 @@
 # Dotfiles
 
-## To get started:
+## Guideline:
 
-### Install packages:
+1. git clone this repo
+2. install packages
+3. run scripts
+4. enable services
+
+### Packages:
 
 #### Probably available through package manager:
 
 - X: xorg-server xorg-init xorg-xrdb (xf86-video-intel might be necessary)
 - I3-WM: i3-wm i3blocks i3lock i3status
 - Sway: sway swaylock swayidle swaybg
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura lsd openssh zip unzip npm python python-pip
+- Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager
 
 List to copy:
-xorg-server xorg-init xorg-xrdb xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip sway swaylock swayidle swaybg
+```bash
+sudo pacman -S xorg-server xorg-init xorg-xrdb xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip sway swaylock swayidle swaybg alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager
+```
 
 #### Other packages:
 
 - yay (https://github.com/Jguer/yay)
-    - brave wmenu
+    ```bash
+    yay -S brave wmenu bluetuith
+    ```
 - rust (rustup.rs)
-- pillow (install with pip)
+    ```bash
+    cargo install sccache
+    ```
+- pip
+    ```bash
+    pip install pillow
+    ```
 
-### Other procedures:
+### Other steps:
 
-- git clone this repo
-- install all packages from "packages" with current package manager
-- make sure fonts are installed and pick in kitt.conf
-- run link.sh
-- run settings.sh
+- run link.sh to symlink config files
+- run settings.sh to set up details
+- enable system services for BlueTooth and NetworkManager
+```bash
+sh link.sh
+sh settings.sh
+systemctl enable bluetooth NetworkManager
+```
 

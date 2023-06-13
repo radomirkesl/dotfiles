@@ -83,13 +83,15 @@ if ! shopt -oq posix; then
 fi
 
 # Start ssh-agent
-eval $(keychain -q --noask --eval ~/.ssh/github)
+eval $(keychain -q --eval ~/.ssh/github)
 
 # Set default editor
 export EDITOR='/usr/local/bin/nvim'
 
 # Add cargo to path
 export PATH="$HOME/.cargo/bin:$PATH"
+# Use sscache for cargo
+export RUSTC_WRAPPER=sccache
 
 
 . "$HOME/.cargo/env"

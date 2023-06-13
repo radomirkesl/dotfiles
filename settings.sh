@@ -9,3 +9,8 @@ kitty +kitten themes --reload-in=all Rosé Pine
 # i3 theme
 i3-style gruvbox -o ~/.dotfiles/i3/config --reload
 
+# set brave as default browser
+xdg-settings set default-web-browser brave-browser.desktop
+xdg-mime default brave-browser.desktop x-scheme-handler/http
+xdg-mime default brave-browser.desktop x-scheme-handler/https
+
