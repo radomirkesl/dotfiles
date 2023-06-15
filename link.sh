@@ -11,3 +11,4 @@ ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
 ln -sf ~/.dotfiles/.Xresources ~/.Xresources
 
 sudo ln -sf ~/.dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo ln -sf ~/.dotfiles/keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf

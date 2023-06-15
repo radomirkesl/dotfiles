@@ -16,20 +16,20 @@
 - Sway: sway swaylock swayidle swaybg
 - Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord
 
 1-command install for arch:
 ```bash
-sudo pacman -S xorg-server xorg-init xorg-xrdb xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip sway swaylock swayidle swaybg alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager
+sudo pacman -S xorg-server xorg-init xorg-xrdb xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip sway swaylock swayidle swaybg alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager discord
 ```
 
 #### Other packages:
 
-- yay (github.com/Jguer/yay)
+- yay (https://github.com/Jguer/yay)
     ```bash
     yay -S brave wmenu bluetuith
     ```
-- rust (rustup.rs)
+- rust (https://rustup.rs)
     ```bash
     cargo install sccache
     ```

@@ -14,3 +14,6 @@ xdg-settings set default-web-browser brave-browser.desktop
 xdg-mime default brave-browser.desktop x-scheme-handler/http
 xdg-mime default brave-browser.desktop x-scheme-handler/https
 
+# set keyboard layout (systm, not X)
+sudo localectl set-keymap --no-convert cz-lat2-prog
+
