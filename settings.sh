@@ -17,3 +17,7 @@ xdg-mime default brave-browser.desktop x-scheme-handler/https
 # set keyboard layout (systm, not X)
 sudo localectl set-keymap --no-convert cz-lat2-prog
 
+# set ranger as default file manager
+xdg-mime default ranger.desktop inode/directory
+update-desktop-database ~/.local/share/applications
+
