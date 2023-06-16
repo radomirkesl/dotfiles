@@ -36,7 +36,10 @@ require('lazy').setup({
     'tpope/vim-surround',
     'tpope/vim-repeat',
     'tpope/vim-speeddating',
-    'tpope/vim-commentary',
+
+    -- Commenting things out
+    -- 'tpope/vim-commentary',
+    { 'numToStr/Comment.nvim', opts = {} },
 
     'github/copilot.vim',
     'theprimeagen/harpoon',
@@ -90,7 +93,11 @@ require('lazy').setup({
 
             -- Useful status updates for LSP
             -- NOTE: `opts = {}` is the same as calling `require('fidget').setup({})`
-            { 'j-hui/fidget.nvim', opts = {} },
+            {
+                'j-hui/fidget.nvim',
+                opts = {},
+                tag = 'legacy'
+            },
 
             -- Additional lua configuration, makes nvim stuff amazing!
             'folke/neodev.nvim',
@@ -107,11 +114,10 @@ require('lazy').setup({
             'L3MON4D3/LuaSnip',
             'saadparwaiz1/cmp_luasnip'
         },
-        event = 'InsertEnter',
     },
 
     -- Useful plugin to show you pending keybinds.
-    { 'folke/which-key.nvim', opts = {} },
+    { 'folke/which-key.nvim',  opts = {} },
     { -- Adds git releated signs to the gutter, as well as utilities for managing changes
         'lewis6991/gitsigns.nvim',
         opts = {

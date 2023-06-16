@@ -61,6 +61,7 @@ vim.keymap.set('n', '<leader>sh', tbuiltin.help_tags, { desc = '[S]earch [H]elp'
 vim.keymap.set('n', '<leader>sw', tbuiltin.grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>sg', tbuiltin.live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', tbuiltin.diagnostics, { desc = '[S]earch [D]iagnostics' })
+vim.keymap.set('n', '<leader>sk', tbuiltin.keymaps, { desc = '[S]earch [K]eybindings' })
 
 -- To get ui-select loaded and working with telescope, you need to call
 -- load_extension, somewhere after setup function:
