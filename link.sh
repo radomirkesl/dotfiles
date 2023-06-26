@@ -4,21 +4,22 @@ ln -sf ~/.dotfiles/ranger ~/.config/
 ln -sf ~/.dotfiles/nvim ~/.config/
 ln -sf ~/.dotfiles/kitty ~/.config/
 ln -sf ~/.dotfiles/i3 ~/.config/
+ln -sf ~/.dotfiles/ncspot ~/.config/
 
-# System config files
+# Bash config
+ln -sf ~/.dotfiles/bash/.bash* ~/
 
-ln -sf ~/.dotfiles/.bashrc ~/.bashrc
-ln -sf ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -sf ~/.dotfiles/.bash_aliases ~/.bash_aliases
-ln -sf ~/.dotfiles/.bash_logout ~/.bash_logout
-ln -sf ~/.dotfiles/.xinitrc ~/.xinitrc
-ln -sf ~/.dotfiles/.Xresources ~/.Xresources
+# Git and Xorg config
+
+ln -sf ~/.dotfiles/syst/.xinitrc ~/
+ln -sf ~/.dotfiles/syst/.gitconfig ~/
+ln -sf ~/.dotfiles/syst/.Xresources ~/
 
 # Alternative desktop file for ranger
 
-ln -sf ~/.dotfiles/ranger.desktop ~/.local/share/applications/ranger.desktop
+ln -sf ~/.dotfiles/syst/ranger.desktop ~/.local/share/applications/ranger.desktop
 
 # Xorg config files
 
-sudo ln -sf ~/.dotfiles/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
-sudo ln -sf ~/.dotfiles/keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf
+sudo ln -sf ~/.dotfiles/syst/touchpad.conf /etc/X11/xorg.conf.d/30-touchpad.conf
+sudo ln -sf ~/.dotfiles/syst/keyboard.conf /etc/X11/xorg.conf.d/00-keyboard.conf

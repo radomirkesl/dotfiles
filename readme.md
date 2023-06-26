@@ -2,7 +2,7 @@
 
 ## Guideline:
 
-1. Git clone this repo.
+1. Git clone this repo INTO YOUR HOME DIRECTORY.
 2. Install packages.
 3. Run scripts.
 4. Enable services.
@@ -69,6 +69,6 @@ Note that enabling bt on boot might not be the safest.
 
 ## Machine-dependent settings:
 
-- Selecting the right keyboard model (keyboard.conf) might for example make some special keys work.
-- Touchpad sensitivity and similar properties (touchpad.conf) might be off. In that case using Synaptics instead of libinput might be necessary.
+- Selecting the right keyboard model (syst/keyboard.conf) might for example make some special keys work.
+- Touchpad sensitivity and similar properties (syst/touchpad.conf) might be off. In that case using Synaptics instead of libinput might be necessary.
 

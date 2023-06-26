@@ -1,0 +1,16 @@
+use_nerdfont = true
+statusbar_format = "%title - %artists"
+
+[keybindings]
+
+"e" = "queue; move down 1"
+"i" = "playnext; move down 1"
+"Space" = "playpause"
+"g" = "move top"
+"Shift+g" = "move bottom"
+
+[track_format]
+left = "%title - %artists"
+center = "%album"
+right = "%saved %duration"
+
