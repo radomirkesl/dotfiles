@@ -7,4 +7,5 @@ __pycache__
 __init__.py
 kitty/current-theme.conf
 kitty/kitty.conf.bak
+ncspot/userstate.cbor
 
