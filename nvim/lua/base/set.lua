@@ -3,7 +3,7 @@ vim.wo.number = true
 vim.o.relativenumber = true
 
 -- Enable mouse mode
-vim.o.mouse = 'a'
+    vim.o.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -28,7 +28,7 @@ vim.o.hlsearch = true
 vim.o.incsearch = true
 
 -- Cursor won't go any closer to the top or bottom of the screen, unless it is the start or end of the file
-vim.o.scrolloff = 8
+vim.o.scrolloff = 12
 
 -- Visual column on the right
 vim.o.colorcolumn = '150'

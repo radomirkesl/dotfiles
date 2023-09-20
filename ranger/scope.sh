@@ -49,6 +49,27 @@ OPENSCAD_COLORSCHEME=${RNGR_OPENSCAD_COLORSCHEME:-Tomorrow Night}
 
 handle_extension() {
     case "${FILE_EXTENSION_LOWER}" in
+        ## Text
+        lua)
+            ## Syntax highlight
+            if [[ "$( stat --printf='%s' -- "${FILE_PATH}" )" -gt "${HIGHLIGHT_SIZE_MAX}" ]]; then
+                exit 2
+            fi
+            if [[ "$( tput colors )" -ge 256 ]]; then
+                local pygmentize_format='terminal256'
+                local highlight_format='xterm256'
+            else
+                local pygmentize_format='terminal'
+                local highlight_format='ansi'
+            fi
+            env HIGHLIGHT_OPTIONS="${HIGHLIGHT_OPTIONS}" highlight \
+                --out-format="${highlight_format}" \
+                --force -- "${FILE_PATH}" && exit 5
+            env COLORTERM=8bit bat --color=always --style="plain" \
+                -- "${FILE_PATH}" && exit 5
+            pygmentize -f "${pygmentize_format}" -O "style=${PYGMENTIZE_STYLE}"\
+                -- "${FILE_PATH}" && exit 5
+            exit 2;;
         ## Archive
         a|ace|alz|arc|arj|bz|bz2|cab|cpio|deb|gz|jar|lha|lz|lzh|lzma|lzo|\
         rpm|rz|t7z|tar|tbz|tbz2|tgz|tlz|txz|tZ|tzo|war|xpi|xz|Z|zip)

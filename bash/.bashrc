@@ -86,7 +86,7 @@ fi
 eval $(keychain -q --eval ~/.ssh/github)
 
 # Set default editor
-export EDITOR='/usr/local/bin/nvim'
+export EDITOR='/usr/bin/nvim'
 
 # Add cargo to path
 export PATH="$HOME/.cargo/bin:$PATH"

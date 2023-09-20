@@ -2,10 +2,10 @@ require 'nvim-treesitter.configs'.setup {
 
     -- A list of parser names, or "all"
     -- ensure_installed = {
-    --     "help", "bash", "regex",
+    --     "bash", "regex",
     --     "latex", "bibtex",
     --     "c", "cpp", "cmake", "make",
-    --     "diff", "git_rebase", "gitattributes", "gitcommit", "gitignore",
+    --     "diff", "gitcommit", "gitignore",
     --     "go", "lua", "rust", "python", "sql",
     --     "markdown", "markdown_inline"
     -- },
@@ -72,8 +72,8 @@ require 'nvim-treesitter.configs'.setup {
                 ['pi'] = '@parameter.inner',
                 ['fo'] = '@function.outer',
                 ['fi'] = '@function.inner',
-                ['co'] = '@class.outer',
-                ['ci'] = '@class.inner',
+                ['ko'] = '@class.outer',
+                ['ki'] = '@class.inner',
             },
         },
 
