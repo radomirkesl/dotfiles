@@ -12,7 +12,7 @@
 
 ### Install with package manager if possible:
 
-- X: xorg-server xorg-init xorg-xrdb (xf86-video-intel might be necessary)
+- X: xorg-server xorg-init xorg-xrdb xorg-xrandr (xf86-video-intel might be necessary)
 - I3-WM: i3-wm i3blocks i3lock i3status
 - Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
@@ -21,7 +21,7 @@
 1-command installation for Arch:
 
 ```bash
-sudo pacman -S xorg-server xorg-init xorg-xrdb xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool python-pillow python-pynvim python-dbus xclip jdk-openjdk pandoc deno texlive-babel-czech htop highlight
+sudo pacman -S xorg-server xorg-init xorg-xrdb xorg-xrandr xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool python-pillow python-pynvim python-dbus xclip jdk-openjdk pandoc deno texlive-babel-czech htop highlight
 ```
 
 ### Other packages:
