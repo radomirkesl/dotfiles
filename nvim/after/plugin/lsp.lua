@@ -7,32 +7,32 @@ local on_attach = function(_, bufnr)
         vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
     end
 
-    nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-    nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+    nmap('<leader>prn', vim.lsp.buf.rename, '[P]erform [R]e[n]ame')
+    nmap('<leader>pca', vim.lsp.buf.code_action, '[P]erform [C]ode [A]ction')
     nmap('<leader>df', vim.diagnostic.open_float, 'Open [D]iagnostic in a [F]loat')
     nmap('<leader>dl', vim.diagnostic.setloclist, 'Open [D]iagnostics [L]ist')
 
     nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
     nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
-    nmap('gI', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
-    nmap('<leader>D', vim.lsp.buf.type_definition, 'Type [D]efinition')
-    nmap('<leader>ds', require('telescope.builtin').lsp_document_symbols, '[D]ocument [S]ymbols')
-    nmap('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+    nmap('<leader>gi', vim.lsp.buf.implementation, '[G]oto [I]mplementation')
+    nmap('<leader>gtd', vim.lsp.buf.type_definition, '[G]oto [T]ype [D]efinition')
+    nmap('<leader>ssd', require('telescope.builtin').lsp_document_symbols, '[S]earch [S]ymbols in [D]ocument ')
+    nmap('<leader>ssw', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[S]earch [S]ymbols in [W]orkspace')
 
     -- See `:help K` for why this keymap
     nmap('H', vim.lsp.buf.hover, 'Hover Documentation')
     nmap('<C-h>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
     -- Lesser used LSP functionality
-    nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
+    nmap('<leader>gd', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
     nmap('<leader>wa', vim.lsp.buf.add_workspace_folder, '[W]orkspace [A]dd Folder')
     nmap('<leader>wr', vim.lsp.buf.remove_workspace_folder, '[W]orkspace [R]emove Folder')
     nmap('<leader>wl', function()
         print(vim.inspect(vim.lsp.buf.list_workspace_folders()))
     end, '[W]orkspace [L]ist Folders')
 
-    -- Create a command `:Format` local to the LSP buffer
-    vim.api.nvim_buf_create_user_command(bufnr, 'Format', function(_)
+    -- Formatting
+    local function format()
         vim.lsp.buf.format {
             formatting_options = {
                 tabSize = vim.o.tabstop,
@@ -42,7 +42,12 @@ local on_attach = function(_, bufnr)
                 trimFinalNewlines = true,
             }
         }
-    end, { desc = 'Format current buffer with LSP' })
+    end
+
+    -- Create a command `:Format` local to the LSP buffer
+    vim.api.nvim_buf_create_user_command(bufnr, 'Format', format, { desc = 'Format current buffer with LSP' })
+    -- Keymap for formatting
+    nmap('<leader>pf', format, '[P]erform [F]ormatting')
 end
 
 -- Enable the following language servers
@@ -109,7 +114,7 @@ vim.diagnostic.config {
     },
 }
 
-vim.keymap.set('n', '<leader>td', function()
+vim.keymap.set('n', '<leader>dt', function()
     if virtex then
         vim.diagnostic.config {
             virtual_text = false
@@ -121,4 +126,4 @@ vim.keymap.set('n', '<leader>td', function()
         }
         virtex = true
     end
-end, { desc = '[T]oggle [D]iagnostics (virtual text)' })
+end, { desc = '[D]iagnostics [T]oggle (virtual text)' })

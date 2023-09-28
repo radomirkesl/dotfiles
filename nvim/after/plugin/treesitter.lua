@@ -68,12 +68,12 @@ require 'nvim-treesitter.configs'.setup {
             lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
             keymaps = {
                 -- You can use the capture groups defined in textobjects.scm
-                ['po'] = '@parameter.outer',
-                ['pi'] = '@parameter.inner',
-                ['fo'] = '@function.outer',
-                ['fi'] = '@function.inner',
-                ['ko'] = '@class.outer',
-                ['ki'] = '@class.inner',
+                ['ap'] = '@parameter.outer',
+                ['ip'] = '@parameter.inner',
+                ['af'] = '@function.outer',
+                ['if'] = '@function.inner',
+                ['ac'] = '@class.outer',
+                ['ic'] = '@class.inner',
             },
         },
 
@@ -81,30 +81,30 @@ require 'nvim-treesitter.configs'.setup {
             enable = true,
             set_jumps = true, -- whether to set jumps in the jumplist
             goto_next_start = {
-                ['<leader>nf'] = '@function.outer',
-                ['<leader>nc'] = '@class.outer',
+                ['<leader>jf'] = '@function.outer',
+                ['<leader>jc'] = '@class.outer',
             },
             goto_next_end = {
-                ['<leader>nef'] = '@function.outer',
-                ['<leader>nec'] = '@class.outer',
+                ['<leader>jef'] = '@function.outer',
+                ['<leader>jec'] = '@class.outer',
             },
             goto_previous_start = {
-                ['<leader>pf'] = '@function.outer',
-                ['<leader>pc'] = '@class.outer',
+                ['<leader>kf'] = '@function.outer',
+                ['<leader>kc'] = '@class.outer',
             },
             goto_previous_end = {
-                ['<leader>pef'] = '@function.outer',
-                ['<leader>pec'] = '@class.outer',
+                ['<leader>jef'] = '@function.outer',
+                ['<leader>jec'] = '@class.outer',
             },
         },
 
         swap = {
             enable = true,
             swap_next = {
-                ['<leader>fn'] = '@parameter.inner',
+                ['<leader>mn'] = '@parameter.inner',
             },
             swap_previous = {
-                ['<leader>fp'] = '@parameter.inner',
+                ['<leader>mp'] = '@parameter.inner',
             },
         },
     }

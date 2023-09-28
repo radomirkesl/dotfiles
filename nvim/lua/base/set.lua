@@ -31,7 +31,7 @@ vim.o.incsearch = true
 vim.o.scrolloff = 12
 
 -- Visual column on the right
-vim.o.colorcolumn = '150'
+vim.o.colorcolumn = '120'
 
 -- Case insensitive searching UNLESS /C or capital in search
 vim.o.ignorecase = true
