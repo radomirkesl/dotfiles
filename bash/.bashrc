@@ -95,3 +95,7 @@ export RUSTC_WRAPPER=sccache
 
 
 . "$HOME/.cargo/env"
+
+# Add go binaries to path
+export PATH="$HOME/.go/bin:$PATH"
+

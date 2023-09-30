@@ -71,3 +71,11 @@ Note that enabling bt on boot might not be the safest.
 - Selecting the right keyboard model (syst/keyboard.conf) might for example make some special keys work.
 - Touchpad sensitivity and similar properties (syst/touchpad.conf) might be off. In that case using Synaptics instead of libinput might be necessary.
 
+## Other stuff:
+
+- Setting go path:
+
+```bash
+go env -w GOPATH=~/.go
+```
+
