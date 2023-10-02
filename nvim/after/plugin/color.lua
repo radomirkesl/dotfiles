@@ -15,8 +15,8 @@ require('rose-pine').setup {
     disable_float_background = true,
     highlight_groups = {
         MatchParen = {fg = 'iris', bg = 'highlight_high', blend = 80},
-        Cursor = {fg = 'love', bg = 'rose'},
-        iCursor = {bg = 'gold'},
+        Cursor = {fg = 'pine', bg = 'foam'},
+        iCursor = {bg = 'foam'},
     }
 }
 

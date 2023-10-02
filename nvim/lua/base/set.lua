@@ -1,5 +1,5 @@
 -- Set cursor
-vim.o.guicursor = 'n-v-c:block-Cursor,i:ver25-iCursor,a:blinkwait700-blinkoff400-blinkon250'
+vim.o.guicursor = 'n-v-c:block-Cursor,i:ver25-iCursor'
 
 -- Make line numbers default
 vim.wo.number = true
