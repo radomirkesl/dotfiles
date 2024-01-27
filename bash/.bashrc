@@ -99,3 +99,6 @@ export RUSTC_WRAPPER=sccache
 # Add go binaries to path
 export PATH="$HOME/.go/bin:$PATH"
 
+
+# Created by `pipx` on 2024-01-25 19:21:39
+export PATH="$PATH:/home/kera/.local/bin"

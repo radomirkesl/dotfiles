@@ -5,6 +5,7 @@ ln -sf ~/.dotfiles/nvim ~/.config/
 ln -sf ~/.dotfiles/kitty ~/.config/
 ln -sf ~/.dotfiles/i3 ~/.config/
 ln -sf ~/.dotfiles/ncspot ~/.config/
+ln -sf ~/.dotfiles/hypr ~/.config/
 
 # Bash config
 ln -sf ~/.dotfiles/bash/.bash* ~/

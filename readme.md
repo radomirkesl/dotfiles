@@ -12,16 +12,16 @@
 
 ### Install with package manager if possible:
 
-- X: xorg-server xorg-init xorg-xrdb xorg-xrandr (xf86-video-intel might be necessary)
-- I3-WM: i3-wm i3blocks i3lock i3status
-- Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth
+- Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech htop highlight dnsutils ascii
+- Hyprland: hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp
 
 1-command installation for Arch:
 
 ```bash
-sudo pacman -S xorg-server xorg-init xorg-xrdb xorg-xrandr xf86-video-intel i3-wm i3blocks i3lock i3status git ranger nvim sl kitty tmux firefox neofetch ncspot zathura lsd ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd openssh zip unzip npm python python-pip alsa-util spulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth man texlive zathura-pdf-mupdf xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool python-pillow python-pynvim python-dbus xclip jdk-openjdk pandoc deno texlive-babel-czech htop highlight dnsutils ascii
+sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp
+
 ```
 
 ### Other packages:
@@ -56,12 +56,12 @@ sudo pacman -S xorg-server xorg-init xorg-xrdb xorg-xrandr xf86-video-intel i3-w
 
 - Run link.sh to symlink config files.
 - Run settings.sh to set up details.
-- Enable system services for BlueTooth and NetworkManager.
+- Enable system services for BlueTooth, NetworkManager and ntpdate (time sync on boot).
 
 ```bash
 sh link.sh
 sh settings.sh
-systemctl enable bluetooth NetworkManager
+systemctl enable bluetooth NetworkManager ntpdate.service
 ```
 
 Note that enabling bt on boot might not be the safest.
@@ -70,6 +70,7 @@ Note that enabling bt on boot might not be the safest.
 
 - Selecting the right keyboard model (syst/keyboard.conf) might for example make some special keys work.
 - Touchpad sensitivity and similar properties (syst/touchpad.conf) might be off. In that case using Synaptics instead of libinput might be necessary.
+- While using hyprland configure these in hypr/hyprland.conf.
 
 ## Other stuff:
 
