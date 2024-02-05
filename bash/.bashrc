@@ -85,20 +85,20 @@ fi
 # Start ssh-agent
 eval $(keychain -q --eval ~/.ssh/github)
 
-# Set default editor
-export EDITOR='/usr/bin/nvim'
-
-# Add cargo to path
-export PATH="$HOME/.cargo/bin:$PATH"
-# Use sscache for cargo
-export RUSTC_WRAPPER=sccache
-
-
-. "$HOME/.cargo/env"
-
-# Add go binaries to path
-export PATH="$HOME/.go/bin:$PATH"
-
-
-# Created by `pipx` on 2024-01-25 19:21:39
-export PATH="$PATH:/home/kera/.local/bin"
+# # Set default editor
+# export EDITOR='/usr/bin/nvim'
+#
+# # Add cargo to path
+# export PATH="$HOME/.cargo/bin:$PATH"
+# # Use sscache for cargo
+# export RUSTC_WRAPPER=sccache
+#
+#
+# . "$HOME/.cargo/env"
+#
+# # Add go binaries to path
+# export PATH="$HOME/.go/bin:$PATH"
+#
+#
+# # Created by `pipx` on 2024-01-25 19:21:39
+# export PATH="$PATH:/home/kera/.local/bin"

@@ -12,11 +12,12 @@ require('lualine').setup {
 require('rose-pine').setup {
     variant = 'moon',
     disable_background = true,
-    disable_float_background = true,
+    disable_float_background = false,
     highlight_groups = {
         MatchParen = {fg = 'iris', bg = 'highlight_high', blend = 80},
         Cursor = {fg = 'pine', bg = 'foam'},
         iCursor = {bg = 'foam'},
+        FloatBorder = {fg = 'rose', bg = 'iris'},
     }
 }
 
@@ -27,3 +28,4 @@ require('nightfox').setup {
 }
 
 vim.cmd.colorscheme(selected)
+
