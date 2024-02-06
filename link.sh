@@ -6,6 +6,10 @@ ln -sf ~/.dotfiles/kitty ~/.config/
 ln -sf ~/.dotfiles/i3 ~/.config/
 ln -sf ~/.dotfiles/ncspot ~/.config/
 ln -sf ~/.dotfiles/hypr ~/.config/
+ln -sf ~/.dotfiles/tofi ~/.config/
+
+# Electron flags for different versions (to make Wayland work)
+
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron22-flags.conf
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron23-flags.conf
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron24-flags.conf
