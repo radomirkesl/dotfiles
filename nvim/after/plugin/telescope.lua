@@ -56,10 +56,11 @@ local function find_files()
     end
 end
 
-vim.keymap.set('n', '<leader>sf', find_files(), { desc = '[S]earch [F]iles' })
+vim.keymap.set('n', '<leader>sf', tbuiltin.find_files, { desc = '[S]earch [F]iles' })
+vim.keymap.set('n', '<leader>sgi', tbuiltin.git_files, { desc = '[S]earch [Gi]t' })
 vim.keymap.set('n', '<leader>sh', tbuiltin.help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', tbuiltin.grep_string, { desc = '[S]earch current [W]ord' })
-vim.keymap.set('n', '<leader>sg', tbuiltin.live_grep, { desc = '[S]earch by [G]rep' })
+vim.keymap.set('n', '<leader>sgr', tbuiltin.live_grep, { desc = '[S]earch by [Gr]ep' })
 vim.keymap.set('n', '<leader>sd', tbuiltin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 vim.keymap.set('n', '<leader>sk', tbuiltin.keymaps, { desc = '[S]earch [K]eybindings' })
 
