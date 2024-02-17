@@ -1,3 +1,7 @@
+# Greeter config
+
+sudo ln -sf ~/.dotfiles/greetd/config.toml /etc/greetd/config.toml
+
 # Program config folders
 
 ln -sf ~/.dotfiles/ranger ~/.config/
@@ -17,6 +21,7 @@ ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron25-flags.conf
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron26-flags.conf
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron27-flags.conf
 ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/electron28-flags.conf
+ln -sf ~/.dotfiles/electron/electron-flags.conf ~/.config/code-flags.conf
 
 # Bash config
 ln -sf ~/.dotfiles/bash/.bash* ~/
