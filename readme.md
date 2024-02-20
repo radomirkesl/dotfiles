@@ -36,6 +36,7 @@ sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop
 
     ```bash
     cargo install sccache
+    cargo install --git https://github.com/boxdot/gurk-rs gurk
     ```
 
 - python packages
