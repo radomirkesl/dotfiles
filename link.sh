@@ -11,6 +11,7 @@ ln -sf ~/.dotfiles/i3 ~/.config/
 ln -sf ~/.dotfiles/ncspot ~/.config/
 ln -sf ~/.dotfiles/hypr ~/.config/
 ln -sf ~/.dotfiles/tofi ~/.config/
+ln -sf ~/.dotfiles/waybar ~/.config/
 
 # Electron flags for different versions (to make Wayland work)
 
