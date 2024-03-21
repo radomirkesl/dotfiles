@@ -48,8 +48,10 @@
   },
 
   "clock": {
-    "format": "{: %R  %d.%m.}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      // "format": "{%R}"
+    // "format": "{: %H:%M  %d.%m.}"
+    // "format": "{: %R  %d/%m}"
+    // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     // "format": "{: %I:%M %p   %a, %b %e}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
