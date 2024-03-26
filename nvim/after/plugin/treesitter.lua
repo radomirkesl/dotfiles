@@ -6,7 +6,8 @@ require 'nvim-treesitter.configs'.setup {
         "latex", "bibtex",
         "c", "cpp", "cmake", "make",
         "go", "lua", "rust", "python", "sql",
-        "markdown", "markdown_inline"
+        "markdown", "markdown_inline",
+        "hyprlang"
     },
 
     -- ensure_installed = "all",
@@ -108,3 +109,6 @@ require 'nvim-treesitter.configs'.setup {
         },
     }
 }
+vim.filetype.add({
+  pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+})
