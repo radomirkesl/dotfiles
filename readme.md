@@ -14,13 +14,13 @@
 
 - Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
-- Hyprland: hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp
+- Hyprland: hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp imagemagick
 
 1-command installation for Arch:
 
 ```bash
-sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet
+sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl imagemagick
 
 ```
 

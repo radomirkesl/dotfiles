@@ -1,3 +1,3 @@
-ranger --choosedir=$HOME/.rangerdir;
-LASTDIR=`cat $HOME/.rangerdir`;
+ranger --choosedir=$HOME/.rangerdir
+LASTDIR=`cat $HOME/.rangerdir`
 cd "$LASTDIR"

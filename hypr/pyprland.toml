@@ -1,0 +1,39 @@
+[pyprland]
+plugins = ["scratchpads", "shortcuts_menu"]
+
+[scratchpads.notes]
+animation = "fromBottom"
+command = "obsidian"
+# check: hyprctl clients | grep class
+class = "obsidian"
+size = "95% 95%"
+margin = 25
+lazy = "True"
+
+[scratchpads.bt]
+animation = "fromTop"
+command = "kitty --class kitty-bt bluetuith"
+class = "kitty-bt"
+size = "50% 50%"
+margin = 250
+lazy = "True"
+
+[scratchpads.sound]
+animation = "fromTop"
+command = "kitty --class kitty-sound pulsemixer"
+class = "kitty-sound" 
+size = "50% 50%"
+margin = 250
+lazy = "True"
+
+[shortcuts_menu]
+engine = "tofi"
+parameters = "--prompt-text='󰣇 System: '"
+
+[shortcuts_menu.entries.system]
+" Lock" = "hyprlock"
+"󰒲 Suspend" = "systemctl suspend"
+"󰿅 Exit Hypr" = "hyprctl dispatch exit"
+"󰜉 Reboot" = "systemctl reboot"
+" Shutdown" = "systemctl poweroff"
+
