@@ -10,12 +10,6 @@ if [[ $# -lt 1 ]] || [[ ! -d $1   ]]; then
 	exit 1
 fi
 
-# Edit below to control the images transition
-export SWWW_TRANSITION=simple
-export SWWW_TRANSITION_STEP=90
-export SWWW_TRANSITION_DURATION=3
-export SWWW_TRANSITION_FPS=90
-
 # This controls (in seconds) when to switch to the next image
 INTERVAL=300
 

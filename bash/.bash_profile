@@ -20,3 +20,8 @@ export EDITOR="/usr/bin/nvim"
 export TERM='kitty'
 export TERM_PROGRAM="kitty"
 
+export SWWW_TRANSITION=simple
+export SWWW_TRANSITION_STEP=2
+export SWWW_TRANSITION_DURATION=3
+export SWWW_TRANSITION_FPS=90
+
