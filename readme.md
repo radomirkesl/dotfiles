@@ -29,7 +29,7 @@ sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop
 - [yay](https://github.com/Jguer/yay)
 
     ```bash
-    yay -S brave wmenu bluetuith tofi swww satty
+    yay -S brave wmenu bluetuith tofi swww satty otf-openmoji
     ```
 
 - [rust](https://rustup.rs)

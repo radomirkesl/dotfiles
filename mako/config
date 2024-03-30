@@ -1,0 +1,15 @@
+font=Mononoki Nerd Font Mono 14
+background-color=#1f1d2ecc
+text-color=#e0def4ff
+
+margin=10
+padding=10
+
+border-size=3
+border-radius=15
+border-color=#31748fff
+
+progress-color=over #f6c177ff
+
+format=<span foreground="#908caaff" size="9.5pt">%a:</span>\n<span foreground="#8ccfd8fff" weight="bold">%s</span>\n%b
+
