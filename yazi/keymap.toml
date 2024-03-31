@@ -1,0 +1,13 @@
+[[manager.prepend_keymap]]
+on   = [ "<C-j>" ]
+run  = 'seek +5'
+desc = "Scroll preview down"
+[[manager.prepend_keymap]]
+on   = [ "<C-k>" ]
+run  = 'seek -5'
+desc = "Scroll preview up"
+
+[[manager.prepend_keymap]]
+on   = [ "<C-w>" ]
+run  = 'shell --confirm "swww img --fill-color 232136 --resize fit $0"'
+desc = "Change wallpaper to selected file"

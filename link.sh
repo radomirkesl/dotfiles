@@ -13,6 +13,7 @@ ln -sf ~/.dotfiles/hypr ~/.config/
 ln -sf ~/.dotfiles/tofi ~/.config/
 ln -sf ~/.dotfiles/waybar ~/.config/
 ln -sf ~/.dotfiles/mako ~/.config/
+ln -sf ~/.dotfiles/yazi ~/.config/
 
 # Electron flags for different versions (to make Wayland work)
 

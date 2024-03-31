@@ -24,6 +24,15 @@ function bgr(){
 	nohup "$@" &>/dev/null &
 }
 
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
 function screen(){
     intern=eDP1
     extern=HDMI2
