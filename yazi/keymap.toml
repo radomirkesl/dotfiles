@@ -11,3 +11,4 @@ desc = "Scroll preview up"
 on   = [ "<C-w>" ]
 run  = 'shell --confirm "swww img --fill-color 232136 --resize fit $0"'
 desc = "Change wallpaper to selected file"
+
