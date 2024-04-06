@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILENAME=~/screenshots/screen-$(date '+%Y%m%d-%H:%M:%S').png
+FILENAME=~/Pictures/screenshots/screen-$(date '+%Y%m%d-%H:%M:%S').png
 
 # if first argument is fullscreen, take a screenshot of the whole screen, if it is select, use slurp to select a region
 
