@@ -1,3 +1,5 @@
+-- WARN: Not in use currently
+
 --[[ set to 1, nvim will open the preview window after entering the markdown buffer
 default: 0 ]]
 vim.g.mkdp_auto_start = 1
@@ -60,18 +62,18 @@ sequence_diagrams: js-sequence-diagrams options
 content_editable: if enable content editable for preview page, default: v:false
 disable_filename: if disable filename header for preview page, default: 0 ]]
 vim.g.mkdp_preview_options = {
-  mkit = {},
-  katex = {},
-  uml = {},
-  maid = {},
-  disable_sync_scroll = 0,
-  sync_scroll_type = 'middle',
-  hide_yaml_meta = 1,
-  sequence_diagrrms = {},
-  flowchart_diagrams = {},
-  content_editable = false,
-  disable_filename = 0,
-  toc = {}
+    mkit = {},
+    katex = {},
+    uml = {},
+    maid = {},
+    disable_sync_scroll = 0,
+    sync_scroll_type = 'middle',
+    hide_yaml_meta = 1,
+    sequence_diagrrms = {},
+    flowchart_diagrams = {},
+    content_editable = false,
+    disable_filename = 0,
+    toc = {},
 }
 -- let g:mkdp_preview_options = {
 --     \ 'mkit': {},
@@ -112,4 +114,3 @@ By default the theme is define according to the preferences of the system ]]
 vim.g.mkdp_theme = 'dark'
 
 -- vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>")
-

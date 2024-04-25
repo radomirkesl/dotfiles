@@ -1,3 +1,11 @@
+vim.cmd.colorscheme 'rose-pine'
+
+-- Save undo history
+vim.o.undofile = true
+
+-- I have a Nerd Font
+vim.g.have_nerd_font = true
+
 -- Set cursor
 vim.o.guicursor = 'n-v-c:block-Cursor,i:ver25-iCursor'
 
@@ -6,7 +14,7 @@ vim.wo.number = true
 vim.o.relativenumber = true
 
 -- Enable mouse mode
-    vim.o.mouse = 'a'
+vim.o.mouse = 'a'
 
 -- Sync clipboard between OS and Neovim.
 --  Remove this option if you want your OS clipboard to remain independent.
@@ -44,9 +52,9 @@ vim.o.smartcase = true
 vim.wo.signcolumn = 'yes'
 
 -- Decrease update time
-vim.o.updatetime = 50
+vim.o.updatetime = 250
 vim.o.timeout = true
-vim.o.timeoutlen = 200
+vim.o.timeoutlen = 300
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -54,16 +62,31 @@ vim.o.completeopt = 'menuone,noselect'
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
+-- Configure how new splits should be opened
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+-- Sets how neovim will display certain whitespace characters in the editor.
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+-- Preview substitutions live, as you type!
+vim.opt.inccommand = 'split'
+
+-- Show which line your cursor is on
+vim.opt.cursorline = false
+
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
     callback = function()
-        vim.highlight.on_yank({timeout = 1000})
+        vim.highlight.on_yank { timeout = 1000 }
     end,
     group = highlight_group,
     pattern = '*',
 })
 
 -- vim.g.mapleader = ' ' (has to be defined before plugins are loaded)
-
