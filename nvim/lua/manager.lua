@@ -82,15 +82,20 @@ require('lazy').setup {
         priority = 1000,
         opts = {
             variant = 'moon',
-            disable_background = true,
-            disable_float_background = true,
+            disable_background = false,
+            disable_float_background = false,
             highlight_groups = {
                 -- MatchParen = { fg = 'iris', bg = 'highlight_high', blend = 80 },
                 Cursor = { fg = 'pine', bg = 'foam' },
                 iCursor = { bg = 'foam' },
-                FloatBorder = { fg = 'iris' },
+                -- FloatBorder = { fg = 'iris' },
             },
         },
+    },
+
+    {
+        'xiyaowong/transparent.nvim',
+        lazy = false,
     },
 
     -- Status Line
