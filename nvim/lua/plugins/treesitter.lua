@@ -2,15 +2,20 @@ return { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
     dependencies = {
-        'nvim-treesitter/nvim-treesitter-textobjects'
+        'nvim-treesitter/nvim-treesitter-textobjects',
     },
     opts = {
         ensure_installed = {
-            'lua', 'luadoc',
-            'vim', 'vimdoc',
-            'bash', 'regex',
-            'latex', 'bibtex',
-            'markdown', 'markdown_inline',
+            'lua',
+            'luadoc',
+            'vim',
+            'vimdoc',
+            'bash',
+            'regex',
+            'latex',
+            'bibtex',
+            'markdown',
+            'markdown_inline',
             'go',
             'python',
             'hyprlang',
@@ -88,7 +93,7 @@ return { -- Highlight, edit, and navigate code
                     ['sA'] = '@parameter.outer',
                 },
             },
-        }
+        },
     },
     config = function(_, opts)
         -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
@@ -104,8 +109,8 @@ return { -- Highlight, edit, and navigate code
         --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
         --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
         --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-        vim.filetype.add({
-            pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
-        })
+        vim.filetype.add {
+            pattern = { ['.*/hypr/.*%.conf'] = 'hyprlang' },
+        }
     end,
 }

@@ -9,7 +9,7 @@ return { -- Autocompletion
                 -- Build Step is needed for regex support in snippets.
                 -- This step is not supported in many windows environments.
                 -- Remove the below condition to re-enable on windows.
-                if vim.fn.has('win32') == 1 or vim.fn.executable('make') == 0 then
+                if vim.fn.has 'win32' == 1 or vim.fn.executable 'make' == 0 then
                     return
                 end
                 return 'make install_jsregexp'
@@ -33,14 +33,15 @@ return { -- Autocompletion
         --  into multiple repos for maintenance purposes.
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-path',
+        'hrsh7th/cmp-nvim-lsp-signature-help',
     },
     config = function()
         -- See `:help cmp`
-        local cmp = require('cmp')
-        local luasnip = require('luasnip')
-        luasnip.config.setup({})
+        local cmp = require 'cmp'
+        local luasnip = require 'luasnip'
+        luasnip.config.setup {}
 
-        cmp.setup({
+        cmp.setup {
             snippet = {
                 expand = function(args)
                     luasnip.lsp_expand(args.body)
@@ -52,14 +53,14 @@ return { -- Autocompletion
             -- chosen, you will need to read `:help ins-completion`
             --
             -- No, but seriously. Please read `:help ins-completion`, it is really good!
-            mapping = cmp.mapping.preset.insert({
+            mapping = cmp.mapping.preset.insert {
                 ['<C-d>'] = cmp.mapping.scroll_docs(-4),
                 ['<C-u>'] = cmp.mapping.scroll_docs(4),
-                ['<C-Space>'] = cmp.mapping.complete({}),
-                ['<C-l>'] = cmp.mapping.confirm({
+                ['<C-Space>'] = cmp.mapping.complete {},
+                ['<C-l>'] = cmp.mapping.confirm {
                     behavior = cmp.ConfirmBehavior.Replace,
                     select = true,
-                }),
+                },
                 ['<C-j>'] = cmp.mapping(function(fallback)
                     if cmp.visible() then
                         cmp.select_next_item()
@@ -78,12 +79,13 @@ return { -- Autocompletion
                         fallback()
                     end
                 end, { 'i', 's' }),
-            }),
+            },
             sources = {
                 { name = 'nvim_lsp' },
                 { name = 'luasnip' },
                 { name = 'path' },
+                { name = 'nvim_lsp_signature_help' },
             },
-        })
+        }
     end,
 }
