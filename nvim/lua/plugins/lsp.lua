@@ -209,6 +209,8 @@ return {
             'gofumpt',
             'isort',
             'black',
+            'jq',
+            'bibtex-tidy',
         })
         require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
