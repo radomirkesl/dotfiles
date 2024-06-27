@@ -186,6 +186,12 @@ require('lazy').setup {
             }, { mode = 'v' })
         end,
     },
+    -- Reduces suffering
+    {
+        'Aasim-A/scrollEOF.nvim',
+        event = { 'CursorMoved', 'WinScrolled' },
+        opts = {},
+    },
 
     -- Git related plugins
     -- 'tpope/vim-fugitive',

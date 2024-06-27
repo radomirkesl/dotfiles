@@ -31,6 +31,7 @@ return {
             go = { 'gofumpt' },
             json = { 'jq' },
             bib = { 'bibtex-tidy' },
+            tex = { 'latexindent' },
             --
             -- You can use a sub-list to tell conform to run *until* a formatter
             -- is found.
@@ -54,6 +55,9 @@ return {
             },
             isort = {
                 command = '/usr/bin/isort',
+            },
+            latexindent = {
+                '/usr/bin/latexindent',
             },
         },
     },
