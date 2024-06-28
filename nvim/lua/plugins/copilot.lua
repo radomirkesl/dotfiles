@@ -9,6 +9,7 @@ return {
     config = function()
         vim.api.nvim_set_keymap('i', '<C-o>', 'copilot#Accept("<CR>")', { expr = true, silent = true })
 
+        vim.cmd ':Copilot'
         local enabled = false
         vim.cmd ':Copilot disable'
         vim.keymap.set('n', '<leader>tc', function()
