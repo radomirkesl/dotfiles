@@ -25,6 +25,13 @@ return { -- Autocompletion
                 --   end,
                 -- },
             },
+            opts = {
+                -- enable_autosnippets = true,
+            },
+            config = function()
+                require('luasnip.loaders.from_lua').load { paths = { '~/.config/nvim/lua/snippets/' } }
+                require('luasnip').setup { enable_autosnippets = true }
+            end,
         },
         'saadparwaiz1/cmp_luasnip',
 

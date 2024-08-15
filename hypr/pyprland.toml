@@ -1,13 +1,13 @@
 [pyprland]
-plugins = ["scratchpads", "shortcuts_menu"]
+plugins = ["scratchpads", "shortcuts_menu", "toggle_dpms"]
 
 [scratchpads.notes]
 animation = "fromBottom"
-command = "obsidian"
+command = "kitty --class kitty-notes -d ~/notes --hold nvim ~/notes -c :WikiIndex"
 # check: hyprctl clients | grep class
-class = "obsidian"
-size = "95% 95%"
-margin = 25
+class = "kitty-notes"
+size = "90% 90%"
+margin = 50
 lazy = "True"
 
 [scratchpads.bt]
@@ -26,14 +26,29 @@ size = "50% 50%"
 margin = 250
 lazy = "True"
 
+[scratchpads.net]
+animation = "fromTop"
+command = "kitty --class kitty-net nmtui"
+class = "kitty-net" 
+size = "50% 50%"
+margin = 250
+lazy = "True"
+
 [shortcuts_menu]
 engine = "tofi"
-parameters = "--prompt-text='󰣇 System: '"
+parameters = "--prompt-text='[prompt]' --font-size=40 --result-spacing=10 --width=30% --height=35% --prompt-padding=0"
+submenu_end = ""
 
-[shortcuts_menu.entries.system]
+[shortcuts_menu.entries."󰣇 System"]
 " Lock" = "hyprlock"
-"󰒲 Suspend" = "systemctl suspend"
+"󰕾 Volume" = "pypr toggle sound"
+"󰂯 Bluetooth" = "pypr toggle bt"
+" Internet" = "pypr toggle net"
+
+[shortcuts_menu.entries."󰣇 System"."⏼ Power"]
+"󰶐 Screen Off" = "pypr toggle-dpms ; hyprctl dispatch submap screenoff"
 "󰿅 Exit Hypr" = "hyprctl dispatch exit"
+"󰒲 Suspend" = "systemctl suspend"
 "󰜉 Reboot" = "systemctl reboot"
 " Shutdown" = "systemctl poweroff"
 

@@ -163,7 +163,7 @@ return {
             -- clangd = {},
             gopls = {},
             pyright = {},
-            ltex = {},
+            -- ltex = {},
             marksman = {},
 
             -- rust_analyzer = {},
