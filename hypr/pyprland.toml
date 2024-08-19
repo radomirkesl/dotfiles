@@ -36,7 +36,7 @@ lazy = "True"
 
 [shortcuts_menu]
 engine = "tofi"
-parameters = "--prompt-text='[prompt]' --font-size=40 --result-spacing=10 --width=30% --height=35% --prompt-padding=0"
+parameters = "--prompt-text='[prompt]' --prompt-padding=0"
 submenu_end = ""
 
 [shortcuts_menu.entries."󰣇 System"]
