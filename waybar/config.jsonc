@@ -1,7 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "mod": "dock",
+    "mode": "dock",
+    // "output": ["eDP-1", "HDMI-A-2"],
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -26,7 +27,7 @@
     ],
     "hyprland/window": {
         "format": "{}",
-        "max-length": 40
+        "max-length": 80
     },
     "hyprland/workspaces": {
         "disable-scroll": true,

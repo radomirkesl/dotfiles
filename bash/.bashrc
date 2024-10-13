@@ -124,3 +124,4 @@ export SWWW_TRANSITION_FPS=90
 #
 # # Created by `pipx` on 2024-01-25 19:21:39
 # export PATH="$PATH:/home/kera/.local/bin"
+eval "$(zoxide init bash)"
