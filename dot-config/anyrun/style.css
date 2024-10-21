@@ -1,0 +1,12 @@
+* {
+    font-family: "Mononoki Nerd Font Mono";
+}
+
+entry {
+    font-size: 24px;
+}
+
+window {
+    font-size: 16px;
+    background: transparent;
+}
