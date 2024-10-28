@@ -10,7 +10,7 @@ Config(
   y: Fraction(0.1),
 
   // The width of the runner
-  width: Fraction(0.3),
+  width: Fraction(0.35),
 
   // The minimum height of the runner, the runner will expand to fit all the entries
   height: Absolute(0),
@@ -31,7 +31,7 @@ Config(
   close_on_click: true,
 
   // Show search results immediately when Anyrun starts
-  show_results_immediately: true,
+  show_results_immediately: false,
 
   // Limit amount of entries shown in total
   max_entries: None,
@@ -45,5 +45,8 @@ Config(
     "libtranslate.so",
     "librink.so",
     "libkidex.so",
+    // "librandr.so",
+    "libdictionary.so",
+    "libwebsearch.so",
   ],
 )

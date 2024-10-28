@@ -6,8 +6,12 @@ xdg-settings set default-web-browser brave-browser.desktop
 xdg-mime default brave-browser.desktop x-scheme-handler/http
 xdg-mime default brave-browser.desktop x-scheme-handler/https
 
-# set ranger as default file manager
+# other default applications
 xdg-mime default yazi.desktop inode/directory
+xdg-mime default feh.desktop image/png
+xdg-mime default feh.desktop image/jpg
+xdg-mime default zathura.desktop application/pdf
+
 update-desktop-database ~/.local/share/applications
 
 # # i3 theme

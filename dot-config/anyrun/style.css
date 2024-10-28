@@ -1,12 +1,35 @@
+@import "./rose-pine.css";
+
 * {
     font-family: "Mononoki Nerd Font Mono";
-}
-
-entry {
     font-size: 24px;
+    border-radius: 5px;
 }
 
-window {
-    font-size: 16px;
+
+#window {
     background: transparent;
 }
+
+#match-desc {
+    font-size: 16px;
+}
+
+#entry {
+    font-size: 32px;
+}
+
+/**/
+/* #main { */
+/*     color: @text; */
+/*     background: @surface; */
+/* } */
+/**/
+/* #match { */
+/*     color: @text; */
+/*     background: @surface; */
+/* } */
+/**/
+/* label:active { */
+/*     color: red; */
+/* } */
