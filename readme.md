@@ -2,11 +2,13 @@
 
 ## Guideline:
 
-1. Git clone this repo INTO YOUR HOME DIRECTORY.
-2. Install packages.
-3. Run scripts.
-4. Enable services.
-5. Check machine-dependent settings.
+1. Install packages.
+2. Git clone this repo INTO YOUR HOME DIRECTORY.
+3. Run GNU Stow.
+4. Run scripts.
+5. Enable services.
+6. Check machine-dependent settings.
+7. Use nwg-look to set GTK theme.
 
 ## Packages:
 
@@ -15,12 +17,12 @@
 - Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
 - Hyprland: hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look gurk-bin bat
 
 1-command installation for Arch:
 
 ```bash
-sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf lsd openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look
+sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look gurk-bin bat
 ```
 
 ### Other packages:
@@ -28,14 +30,13 @@ sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop
 - [yay](https://github.com/Jguer/yay)
 
     ```bash
-    yay -S brave wmenu bluetuith tofi swww satty otf-openmoji anyrun-git rose-pine-gtk-theme-full
+    yay -S brave wmenu bluetuith tofi swww satty otf-openmoji anyrun-git rose-pine-gtk-theme-full phinger-cursors
     ```
 
 - [rust](https://rustup.rs)
 
     ```bash
     cargo install sccache
-    cargo install --git https://github.com/boxdot/gurk-rs gurk
     ```
 
 - python packages
@@ -51,16 +52,24 @@ sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop
     ```bash
     sudo npm install -g neovim
     ```
+## Stow:
+
+```bash
+cd dotfiles
+stow --dotfiles .
+```
 
 ## Scripts and services:
 
-- Run link.sh to symlink config files.
 - Run settings.sh to set up details.
+- Run link.sh in greetd, electron and xorg if using that stuff.
 - Enable system services for BlueTooth, NetworkManager,  ntpdate (time sync on boot), greetd, syncthing, ...
 
 ```bash
-sh link.sh
 sh settings.sh
+sh greetd/link.sh
+sh electron/link.sh
+sh xorg/link.sh
 # --now starts the services immediately, unless they are already running
 systemctl enable bluetooth NetworkManager ntpdate.service greetd.service syncthing@kera.service --now
 ```

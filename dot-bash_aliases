@@ -10,7 +10,8 @@ alias ranger='ranger --choosedir=$HOME/.rangerdir; LASTDIR=`cat $HOME/.rangerdir
 
 alias vim='nvim'
 
-alias ls='lsd'
+alias ls='eza --total-size'
+alias cat='bat'
 
 alias net='nmtui'
 alias sound='pulsemixer'
