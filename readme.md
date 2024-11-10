@@ -17,12 +17,12 @@
 - Sound: alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer
 - Fonts: ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd (if not available, run fonts.sh)
 - Hyprland: hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl
-- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look gurk-bin bat
+- Tools: git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look bat
 
 1-command installation for Arch:
 
 ```bash
-sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look gurk-bin bat
+sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk dunst polkit-kde-agent mako waybar alsa-utils pulseaudio pulsemixer pulseaudio-alsa pulseaudio-bluetooth pamixer ttf-3270-nerd ttf-mononoki-nerd ttf-terminus-nerd git ranger nvim sl kitty firefox neofetch ncspot zathura zathura-pdf-mupdf eza openssh zip unzip npm python python-pip man texlive xdg-utils bluez dbus networkmanager discord wget ripgrep fd biber xdotool xclip jdk-openjdk pandoc deno texlive-babel-czech btop highlight dnsutils ascii ntp freetype2 harfbuzz cairo pango wayland libxkbcommon meson scdoc wayland-protocols cliphist grim slurp greetd greetd-tuigreet hypridle hyprlock brightnessctl imagemagick yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide syncthing wiki-tui zellij cryfs zoxide nwg-look bat
 ```
 
 ### Other packages:
@@ -30,7 +30,7 @@ sudo pacman -S hyprland pipewire wireplumber qt5-wayland qt6-wayland xdg-desktop
 - [yay](https://github.com/Jguer/yay)
 
     ```bash
-    yay -S brave wmenu bluetuith tofi swww satty otf-openmoji anyrun-git rose-pine-gtk-theme-full phinger-cursors
+    yay -S brave wmenu bluetuith tofi swww satty otf-openmoji anyrun-git rose-pine-gtk-theme-full phinger-cursors gurk-git rose-pine-cursor rose-pine-hyprcursor
     ```
 
 - [rust](https://rustup.rs)
