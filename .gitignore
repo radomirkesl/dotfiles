@@ -8,3 +8,4 @@ __init__.py
 kitty/kitty.conf.bak
 ncspot/userstate.cbor
 
+dot-config/btop/btop.log

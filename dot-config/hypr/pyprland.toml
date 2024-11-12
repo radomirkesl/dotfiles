@@ -35,20 +35,21 @@ margin = 250
 lazy = "True"
 
 [shortcuts_menu]
-engine = "tofi"
-parameters = "--prompt-text='[prompt]' --prompt-padding=0"
+engine = "anyrun"
+# parameters = "--prompt-text='[prompt]' --prompt-padding=0"
+parameters = "--hide-plugin-info true --plugins libstdin.so --show-results-immediately true --max-entries 10"
 submenu_end = ""
 
 [shortcuts_menu.entries."󰣇 System"]
+" Shutdown" = "systemctl poweroff"
+"󰜉 Reboot" = "systemctl reboot"
 " Lock" = "hyprlock"
 "󰕾 Volume" = "pypr toggle sound"
 "󰂯 Bluetooth" = "pypr toggle bt"
 " Internet" = "pypr toggle net"
-
-[shortcuts_menu.entries."󰣇 System"."⏼ Power"]
 "󰶐 Screen Off" = "pypr toggle-dpms ; hyprctl dispatch submap screenoff"
 "󰿅 Exit Hypr" = "hyprctl dispatch exit"
 "󰒲 Suspend" = "systemctl suspend"
-"󰜉 Reboot" = "systemctl reboot"
-" Shutdown" = "systemctl poweroff"
+
+# [shortcuts_menu.entries."󰣇 System"."⏼ Power"]
 
