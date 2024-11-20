@@ -102,6 +102,9 @@ export EDITOR="nvim"
 export TERM='kitty'
 export TERM_PROGRAM="kitty"
 
+export VISUAL="nvim"
+export BROWSER="brave"
+
 export SWWW_TRANSITION=simple
 export SWWW_TRANSITION_STEP=2
 export SWWW_TRANSITION_DURATION=3
@@ -126,3 +129,4 @@ export SWWW_TRANSITION_FPS=90
 # export PATH="$PATH:/home/kera/.local/bin"
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
+source /usr/share/doc/pkgfile/command-not-found.bash

@@ -17,6 +17,8 @@ alias net='nmtui'
 alias sound='pulsemixer'
 alias bt='bluetuith'
 
+alias update='sudo pacman -Syyu --noconfirm && rustup update && yay -Syyu --noconfirm'
+
 #Shortcut functions
 
 shopt -s expand_aliases
