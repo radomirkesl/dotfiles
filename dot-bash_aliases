@@ -19,6 +19,8 @@ alias bt='bluetuith'
 
 alias update='sudo pacman -Syyu --noconfirm && rustup update && yay -Syyu --noconfirm'
 
+alias mibo='ssh rada@176.102.66.101 -p 3748 -i ~/.ssh/mibo'
+
 #Shortcut functions
 
 shopt -s expand_aliases

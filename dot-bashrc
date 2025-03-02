@@ -7,6 +7,7 @@ case $- in
     *i*) ;;
       *) return;;
 esac
+[[ $- == *i* ]] && source /usr/share/blesh/ble.sh --noattach
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
@@ -130,3 +131,4 @@ export SWWW_TRANSITION_FPS=90
 eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 source /usr/share/doc/pkgfile/command-not-found.bash
+[[ ! ${BLE_VERSION-} ]] || ble-attach
