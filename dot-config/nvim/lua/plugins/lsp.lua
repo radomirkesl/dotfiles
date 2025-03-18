@@ -23,6 +23,7 @@ return {
         -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
         -- used for completion, annotations and signatures of Neovim apis
         { 'folke/neodev.nvim', opts = {} },
+        'nvim-java/nvim-java',
     },
     config = function()
         -- Brief aside: **What is LSP?**
@@ -225,6 +226,17 @@ return {
                     require('lspconfig')[server_name].setup(server)
                 end,
             },
+            jdtls = function()
+                require('java').setup {
+                    -- Your custom jdtls settings goes here
+                }
+
+                require('lspconfig').jdtls.setup {
+                    -- Your custom nvim-java configuration goes here
+                }
+            end,
+            ensure_installed = '',
+            automatic_installation = '',
         }
     end,
 }

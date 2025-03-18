@@ -48,6 +48,8 @@ require('lazy').setup {
 
     require 'plugins.wiki',
 
+    require 'plugins.debug',
+
     'tpope/vim-sleuth',
     'tpope/vim-surround',
     'tpope/vim-repeat',

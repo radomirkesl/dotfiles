@@ -19,6 +19,7 @@ return { -- Highlight, edit, and navigate code
             'go',
             'python',
             'hyprlang',
+            'java',
         },
         -- Autoinstall languages that are not installed
         auto_install = true,
