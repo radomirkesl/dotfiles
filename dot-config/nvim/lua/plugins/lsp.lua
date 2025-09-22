@@ -3,7 +3,7 @@ return {
     'neovim/nvim-lspconfig',
     dependencies = {
         -- Automatically install LSPs and related tools to stdpath for Neovim
-        { 'williamboman/mason.nvim', config = true }, -- NOTE: Must be loaded before dependants
+        { 'williamboman/mason.nvim', opts = {} }, -- NOTE: Must be loaded before dependants
         'williamboman/mason-lspconfig.nvim',
         'WhoIsSethDaniel/mason-tool-installer.nvim',
 
@@ -23,7 +23,7 @@ return {
         -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
         -- used for completion, annotations and signatures of Neovim apis
         { 'folke/neodev.nvim', opts = {} },
-        'nvim-java/nvim-java',
+        -- 'nvim-java/nvim-java',
     },
     config = function()
         -- Brief aside: **What is LSP?**
@@ -225,16 +225,16 @@ return {
                     server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
                     require('lspconfig')[server_name].setup(server)
                 end,
+                -- jdtls = function()
+                --     require('java').setup {
+                --         -- Your custom jdtls settings goes here
+                --     }
+                --
+                --     require('lspconfig').jdtls.setup {
+                --         -- Your custom nvim-java configuration goes here
+                --     }
+                -- end,
             },
-            jdtls = function()
-                require('java').setup {
-                    -- Your custom jdtls settings goes here
-                }
-
-                require('lspconfig').jdtls.setup {
-                    -- Your custom nvim-java configuration goes here
-                }
-            end,
             ensure_installed = '',
             automatic_installation = '',
         }

@@ -17,9 +17,9 @@ alias net='nmtui'
 alias sound='pulsemixer'
 alias bt='bluetuith'
 
-alias update='sudo pacman -Syyu --noconfirm && rustup update && yay -Syyu --noconfirm'
+alias update='sudo pacman -Syyu --noconfirm && flatpak update -y && rustup update && yay -Syyu --noconfirm'
 
-alias mibo='ssh rada@176.102.66.101 -p 3748 -i ~/.ssh/mibo'
+alias tittees='systemctl start postgresql && zellij -l tittees'
 
 #Shortcut functions
 

@@ -1,0 +1,19 @@
+layout {
+    cwd "~/mibo/tittees"
+    tab_template name="tab-w-ui" {
+        pane size=1 borderless=true {
+            plugin location="tab-bar"
+        }
+        children
+        pane size=1 borderless=true {
+            plugin location="status-bar"
+        }
+    }
+    tab-w-ui name="Code" {
+        pane command="nvim" borderless=false
+    }
+    tab-w-ui name="Terminal"
+    tab-w-ui name="Server" {
+        pane command="air"
+    }
+}
